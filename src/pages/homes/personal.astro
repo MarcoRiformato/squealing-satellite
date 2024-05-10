@@ -1,0 +1,195 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Header from '~/components/widgets/Header.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+
+const metadata = {
+  title: 'Personal Homepage Demo',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="announcement"></Fragment>
+  <Fragment slot="header">
+    <Header
+      links={[
+        { text: 'Home', href: '/' },
+        { text: 'News', href: '/news' },
+        { text: 'Priorità', href: '/priorita' },
+        { text: 'Programma', href: '/programma' },
+        { text: 'Contatti', href: '/contatti' },
+      ]}
+      actions={[
+        {
+          text: 'Hire me',
+          href: '#',
+        },
+      ]}
+      isSticky
+      showToggleTheme
+    />
+      </Fragment>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    id="about"
+    columns={3}
+    items={[
+      {
+        icon: 'tabler:brand-dribbble',
+        callToAction: {
+          target: '_blank',
+          text: 'Dribbble',
+          href: '#',
+        },
+      },
+      {
+        icon: 'tabler:brand-behance',
+        callToAction: {
+          target: '_blank',
+          text: 'Behance',
+          href: '#',
+        },
+      },
+      {
+        icon: 'tabler:brand-pinterest',
+        callToAction: {
+          target: '_blank',
+          text: 'Pinterest',
+          href: '#',
+        },
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1491349174775-aaafddd81942?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      alt: 'Colorful Image',
+      loading: 'eager',
+    }}
+  >
+    <Fragment slot="content">
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Ciao, sono Pietro Gentili!</h2>
+      <p>
+        Sono nato nel 2004, vivo all’Isola d’Elba, frequento il primo anno di Giurisprudenza
+        e fino a giugno scorso ho studiato (e “vissuto”) al Liceo Foresi. Amo impegnarmi
+        per la comunità sin dai primi anni di liceo, quando ho iniziato a fare rappresentanza.
+        Come Rappresentante mi sono sempre speso per il diritto allo studio, l’edilizia
+        scolastica, la didattica, i trasporti pubblici, gli eventi e la formazione, portando le
+        istanze elbane in Provincia, in Regione e infine al Governo, durante il mio mandato
+        come Portavoce Nazionale degli Studenti.
+      </p>
+      <br />
+      <p>
+        Tante volte ho organizzato manifestazioni studentesche per fare richieste
+        all’amministrazione e sarei stato ipocrita se mi fossi tirato indietro davanti alla
+        possibilita’ di lavorare direttamente per risolvere quei problemi. Per questo ho
+        deciso di candidarmi con Lista Civica Angelo Zini, per dare il mio contributo alla
+        città e all’Elba, insieme a persone esperte di cui ho stima e soprattutto a persone
+        nuove in cui ho fiducia.
+      </p>
+      <br />
+      <p>Seguimi sui miei social:</p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Hero -->
+<Hero
+  actions={[
+    {
+      variant: 'primary',
+      text: 'Leggi le mie priorità',
+      href: '/priorita',
+      target: '_blank',
+      icon: 'tabler:bulb',
+    },
+    { text: 'Consulta curriculum', href: '/curriculum', icon:'tabler:download' },
+  ]}
+  image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+>
+
+  <Fragment slot="subtitle">
+    <span class="hidden sm:inline">
+      Se avrò la vostra fiducia mi impegnerò al massimo per ascoltare e coinvolgere tutti,
+      cercando soluzioni nuove a problemi vecchi di Portoferraio e dell’Elba.
+      Sogno l’Elba come un “posto per giovani”, senza dimenticare comunque anche chi
+      giovane non è più. Per scegliere le mie priorità mi sono quindi chiesto: cosa rende
+      una città un “posto per giovani”?<br/><br/> Scopri di più sulle mie priorità oppure consulta le mie competenze nel curriculum.
+      </span
+    >
+  </Fragment>
+</Hero>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    id="porfolio"
+    title="Elevating visual narratives"
+    subtitle="Embark on a design journey that surpasses pixels, entering a realm of imagination. Explore my portfolio, where passion and creativity converge to shape enthralling visual narratives."
+    isReversed
+    items={[
+      {
+        title: 'Description:',
+        description:
+          'Developed a comprehensive brand identity for a tech startup, Tech Innovators, specializing in disruptive innovations. The goal was to convey a modern yet approachable image that resonated with both corporate clients and tech enthusiasts.',
+      },
+      {
+        title: 'Role:',
+        description:
+          'Led the entire branding process from concept to execution. Created a dynamic logo that symbolized innovation, selected a vibrant color palette, and I designed corporate stationery, website graphics, and social media assets.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1658248165252-71e116af1b34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80',
+      alt: 'Tech Design Image',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'Go to the project',
+      icon: 'tabler:chevron-right',
+      href: '#',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Project 1: <br /><span class="text-2xl">Brand identity for tech innovators</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    title="Let's create together"
+    subtitle="Ready to transform your vision into captivating designs?"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Hire me',
+        href: '/',
+      },
+    ]}
+  />
+
+  <!-- BlogLatestPost Widget **************** -->
+
+  <BlogLatestPosts
+    id="blog"
+    title="Explore my insightful articles on my blog"
+    information={`Dive into a realm of design wisdom and creative inspiration, where you'll find invaluable insights, practical tips, and captivating narratives that elevate and enrich your creative journey.`}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts>
+</Layout>

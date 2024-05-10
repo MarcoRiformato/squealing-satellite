@@ -1,0 +1,230 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Content from '~/components/widgets/Content.astro';
+import Header from '~/components/widgets/Header.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+
+const metadata = {
+  title: 'Personal Homepage Demo',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="announcement"></Fragment>
+  <Fragment slot="header">
+    <Header
+      links={[
+        { text: 'Home', href: '/homes/personal' },
+        { text: 'News', href: '/news' },
+        { text: 'Priorità', href: '/priorita' },
+        { text: 'Programma', href: '/programma' },
+        { text: 'Contatti', href: '/contatti' },
+      ]}
+      actions={[
+        {
+          text: 'Hire me',
+          href: '#',
+        },
+      ]}
+      isSticky
+      showToggleTheme
+    />
+      </Fragment>
+
+    <HeroText
+    tagline="Programma"
+    title="Le mie priorità"
+    subtitle="Se avrò la vostra fiducia mi impegnerò al massimo per ascoltare e coinvolgere tutti, cercando soluzioni nuove a problemi vecchi di Portoferraio e dell\’Elba. Sogno l\’Elba come un “posto per giovani”, senza dimenticare comunque anche chi giovane non è più Per scegliere le mie priorità mi sono quindi chiesto: cosa rende una città un “posto per giovani”?"
+    />
+
+  <!-- Diritto allo studio (scuole) ************** -->
+
+  <Content
+    title="Diritto allo studio (scuole)"
+    subtitle="L\’istruzione è libertà, opportunità e crescita. Tutte cose di cui un giovane, a Portoferraio, ha disperatamente bisogno ma alle quali il sistema elbano riesce a rispondere solo in parte. Il mio impegno è volto ad attuare il “patto per il diritto allo studio” (che come Rappresentante ho fatto firmare dall\’ Amministrazione nel 2022), per garantire a tutti i Portoferraiesi il diritto alla scuola, in particolare"
+    isReversed
+    items={[
+      {
+        description:
+          'Contributi per acquisto libri scolastici a famiglie con basso reddito',
+      },
+      {
+        description:
+          'Banca del Libro per le scuole elementari e medie, dove fattibile anche alle superiori',
+      },
+      {
+        description:
+          'Contributo a famiglie a basso reddito per il vestiario da laboratorio negli indirizzi tecnico-professionali (alberghiero incluso)',
+      },
+      {
+        description:
+          'Copertura del costo gita per le famiglie a basso reddito (anche alle superiori)',
+      },
+      {
+        description:
+          'Organizzazione, in accordo economico con gli altri comuni, di attività di recupero scolastico gratuito tutto l’anno, con professori dedicati',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1620558138198-cfb9b4f3c294?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1671&q=80',
+      alt: 'Startup Image',
+    }}
+  >
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+    <!-- Diritto allo studio (università) ************** -->
+
+    <Content
+        title="Diritto allo studio (università)"
+        subtitle="Per un elbano frequentare un\’università pubblica costa quanto per un milanese frequentare la Bocconi. Lo Stato, quindi il Comune, deve fare il possibile per appiattire questa differenza, rendendo l\’Università un\’opportunità per tutti i ragazzi di Portoferraio, non solo per un\’élite. Per questo mi impegno a lavorare su alcune priorità"
+        items={[
+        {
+            description:
+            'Contributo affitti, per coprire parte rilevante dell’affitto ai ragazzi con situazione di indigenza o difficoltà che non siano fuori corso',
+        },
+        {
+            description:
+            'Prestiti d’onore, siglare un accordo con le banche locali per garantire con fondi comunali dei prestiti agevolati concessi dalle banche ai ragazzi per pagarsi l’università, con l’impegno di restare all’Elba dopo la laurea',
+        },
+        {
+            description:
+            'Aule studio nel complesso De Laugier e nelle altre proprietà comunali idonee',
+        },
+        {
+            description:
+            'Piattaforma “trova coinquilino” per incrociare le richieste di alloggio tra elbani fuorisede',
+        },
+        {
+            description:
+            'Coordinamento tra orari di navi e treni per facilitare i collegamenti',
+        },
+        ]}
+        image={{
+        src: 'https://images.unsplash.com/photo-1620558138198-cfb9b4f3c294?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1671&q=80',
+        alt: 'Startup Image',
+        }}
+    >
+
+        <Fragment slot="bg">
+        <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+        </Fragment>
+    </Content>
+
+    <!-- altri 2 -->
+    <Features3
+    columns={2}
+    items={[
+      {
+        title: 'Università all’Elba?',
+        description: 'Siamo chiari: non ci sara’ una “Universitas Studiorum Ilvae” ma potrà esserci una sede distaccata per corsi di eccellenza legati al territorio (biologia marina, geologia) o per specifici master o dottorati di ricerca. Dove? Al Grigolo; quando il liceo sarà spostato nel nuovo plesso. Cosi’ facendo salveremo il Grigolo dal disuso e valorizzeremo uno spazio che si trova già pronto. Provate a immaginare come sarebbe Portoferraio in inverno, se diventasse una mini città universitaria.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Edilizia Scolastica',
+        description: 'Voglio portare fino in fondo la lotta per l’edilizia scolastica, lavorando per ottenere dalla Provincia gli interventi necessari a sistemare Salita Napoleone, per ora messa in sicurezza con un intervento straordinario del Comune, anche se sarebbe spettato alla Provincia. Quando Livorno sarà assente mi batterò per coprire con fondi del Comune di Portoferraio e per coinvolgere le altre 6 amministrazioni. Stesso lavoro intendo portare avanti per il Grigolo, al fine di sistemare infissi, porte,bagni, finestre e strutture, oltreché a rimuovere il vicino amianto. Interventi minori, dove necessari, devono essere intrapresi anche a Concia e al Cerboni.',
+        icon: 'tabler:backhoe',
+      }
+    ]}
+    classes={{ container: 'max-w-5xl' }}
+    />
+
+  <!-- Scuola ************** -->
+
+  <Content
+  title="Scuola"
+  subtitle="La scuola è la principale delle priorità a cui mi piacerebbe lavorare, qui raggruppo alcune ulteriori intenzioni"
+  isReversed
+  items={[
+    {
+      description:
+        'Avviare un progetto permanente di educazione civica ed uno di educazione affettiva e sessuale nelle scuole superiori coinvolgendo esperti.',
+    },
+    {
+      description:
+        'Lavorare con le scuole per realizzare il modello “scuole aperte” con attività formative e sociali volontarie il pomeriggio, anche autogestite.',
+    },
+    {
+      description:
+        'Istituire un tavolo permanente mensile di confronto tra Comune, Rappresentanza studentesche e Dirigenze scolastiche.',
+    },
+    {
+      description:
+        'Parcheggi riservati per studenti in centro',
+    },
+    {
+      description:
+        'Potenziamento, nei modi permessi dalla legge, dello psicologo scolastico con fondi comunali',
+    },
+    {
+      description:
+        'Attivazione di percorsi di formazione post scolastici altamente qualificati (its e Ifts regionali)',
+    },
+  ]}
+  image={{
+    src: 'https://images.unsplash.com/photo-1620558138198-cfb9b4f3c294?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1671&q=80',
+    alt: 'Startup Image',
+  }}
+>
+
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+  </Content>
+
+  <!-- Altri 6 -->
+      <!-- Università all'Elba -->
+      <Features3
+      columns={2}
+      items={[
+        {
+            title: 'Eventi e Feste',
+            description: 'Portoferraio deve diventare una città ricca di vita tutto l’anno, capace di offrire ai ragazzi opportunità di divertimento e socialità. Solo un paese ricco di eventi e feste può essere il centro di riferimento per l’Elba che Portoferraio è chiamato a essere per natura. L’impegno è a realizzare un piano di eventi comunali, coinvolgendo soggetti pubblici e privati e a ricercare collaborazione con le attività commerciali per integrare l’offerta comunale con un piano “dal basso” di piccoli eventi, agevolati in tutto dall’amministrazione. E’ necessario realizzare nuovi luoghi di socialità per gli eventi, valorizzando la zona circostante lo skate park, l’area della linguella e anche le stesse Ghiaie. La Golden Night deve diventare l’evento di punta della stagione elbana, con ospiti e musica del miglior livello.',
+            icon: 'tabler:confetti',
+        },
+        {
+            title: 'Trasporto Pubblico',
+            description: 'Il diritto a muoversi è diritto allo studio, diritto al lavoro, diritto alla socialità, diritto alla salute. Deve quindi essere La Priorità, con un impegno rivolto a raggiungere un aumento delle corse tra i paesi e Portoferraio, attraverso cooperazioni intercomunali. Gli orari vanno rimodulati secondo i bisogni di ospedale, scuole, associazioni sportive e normali cittadini. Il TPL deve permettere a tutti gli elbani di trascorrere una giornata intera a Portoferraio, senza l’oppressione di orari assurdi. Necessario anche portare a termine il lavoro con la Regione per trasformare l’Elba in zona tariffaria urbana unica; riducendo enormemente i costi degli abbonamenti.',
+            icon: 'tabler:bus',
+        },
+        {
+            title: 'Trasporto Notturno',
+            description: 'Capitolo a parte merita il trasporto notturno; un’esigenza fondamentale per la sicurezza stradale e per il diritto alla socialità degli elbani, oltre che per il nostro pieno sviluppo turistico. Mi impegnerò per co-organizzare un servizio autobus di ritorno notturno da Portoferraio verso i paesi, così da consentire a tutti di trascorrere le proprie serate nel capoluogo. Inoltre il servizio deve adattarsi alle esigenze quotidiane, collegando (andata e ritorno) la città (e i suoi parcheggi) con i grandi eventi elbani e con le discoteche, per garantire mobilità economica e sicurezza stradale.',
+            icon: 'tabler:moon',
+        },
+        {
+            title: 'Continuità Territoriale (navi e treni)',
+            description: 'E’ necessario “mettersi al tavolo” insieme a Toremar, Moby ed Autorità Portuale per progettare la nuova continuità territoriale, grazie al recente bando regionale. Coordinare orari di navi e treni, vigilare sul rispetto dei tempi, garantire la bigliettazione online, aumentare i collegamenti tra Piombino M e Campiglia, riservare una “quota residenti”, aumentare le corse di aliscafo sono provvedimenti fondamentali per collegare a pieno l’Elba col resto del mondo.',
+            icon: 'tabler:ship',
+        },
+        {
+            title: 'Consultorio',
+            description: 'Il consultorio è un presidio sanitario e sociale importantissimo per molti adolescenti e giovani elbani, Portoferraio deve guidare i Comuni elbani con una iniziativa di potenziamento (con fondi dei comuni) del consultorio, incentivandone anche la conoscenza nelle scuole.',
+            icon: 'tabler:heart',
+        },
+        {
+            title: 'Reddito di Emancipazione',
+            description: 'La violenza domestica è una vera emergenza permanente. Il Comune ha il dovere di proseguire nella strada intrapresa per affrontarla (con la grande iniziativa del centro antiviolenza) attraverso modi nuovi e ambiziosi, come il “reddito di emancipazione”, ovvero un contributo per le spese personali necessarie alle vittime di violenza che decidano di separarsi dal partner, nel mentre che vengono accompagnate in un percorso di riconquista dell’indipendenza, innanzitutto con la formazione ed il collocamento professionale.',
+            icon: 'tabler:home',
+        }
+      ]}
+      classes={{ container: 'max-w-5xl' }}
+      />
+
+  <!-- BlogLatestPost Widget **************** -->
+
+  <BlogLatestPosts
+    id="blog"
+    title="Explore my insightful articles on my blog"
+    information={`Dive into a realm of design wisdom and creative inspiration, where you'll find invaluable insights, practical tips, and captivating narratives that elevate and enrich your creative journey.`}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts>
+</Layout>

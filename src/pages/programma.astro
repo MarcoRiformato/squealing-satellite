@@ -1,21 +1,58 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-import ProgrammaComponente from "../components/ProgrammaComponente.vue"
+import Layout from '~/layouts/PageLayout.astro';
+import Header from '~/components/widgets/Header.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+
+const metadata = {
+  title: 'Personal Homepage Demo',
+};
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-            <ProgrammaComponente/>
-		</main>
-		<Footer />
-	</body>
-</html>
+<Layout metadata={metadata}>
+  <Fragment slot="announcement"></Fragment>
+  <Fragment slot="header">
+    <Header
+      links={[
+        { text: 'Home', href: '/homes/personal' },
+        { text: 'News', href: '/news' },
+        { text: 'Priorità', href: '/priorita' },
+        { text: 'Programma', href: '/programma-lista' },
+        { text: 'Contatti', href: '/contatti' },
+      ]}
+      actions={[
+        {
+          text: 'Hire me',
+          href: '#',
+        },
+      ]}
+      isSticky
+      showToggleTheme
+    />
+      </Fragment>
+
+      <CallToAction
+      title="In arrivo"
+      subtitle="Stiamo apportando le ultime modifiche al programma della lista, che verrà rilasciato a breve. Intanto, leggi le mie priorità!"
+      actions={[
+        {
+          variant: 'primary',
+          text: 'Priorità',
+          href: '/priorita',
+          icon: 'tabler:bulb',
+        },
+      ]}
+    />
+
+  <!-- BlogLatestPost Widget **************** -->
+
+  <BlogLatestPosts
+    id="blog"
+    title="Explore my insightful articles on my blog"
+    information={`Dive into a realm of design wisdom and creative inspiration, where you'll find invaluable insights, practical tips, and captivating narratives that elevate and enrich your creative journey.`}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts>
+</Layout>
