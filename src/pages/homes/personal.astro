@@ -3,11 +3,10 @@ import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Header from '~/components/widgets/Header.astro';
 import Content from '~/components/widgets/Content.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 
 const metadata = {
-  title: 'Personal Homepage Demo',
+  title: 'Pietro Gentili - Home',
 };
 ---
 
@@ -22,12 +21,6 @@ const metadata = {
         { text: 'Programma', href: '/programma' },
         { text: 'Contatti', href: '/contatti' },
       ]}
-      actions={[
-        {
-          text: 'Hire me',
-          href: '#',
-        },
-      ]}
       isSticky
       showToggleTheme
     />
@@ -40,32 +33,24 @@ const metadata = {
     columns={3}
     items={[
       {
-        icon: 'tabler:brand-dribbble',
+        icon: 'tabler:brand-instagram',
         callToAction: {
           target: '_blank',
-          text: 'Dribbble',
-          href: '#',
+          text: 'Instagram',
+          href: 'https://www.instagram.com/pietro_gentili_/',
         },
       },
       {
-        icon: 'tabler:brand-behance',
+        icon: 'tabler:brand-facebook',
         callToAction: {
           target: '_blank',
-          text: 'Behance',
-          href: '#',
+          text: 'Facebook',
+          href: 'https://www.facebook.com/pietro.gentili.35',
         },
-      },
-      {
-        icon: 'tabler:brand-pinterest',
-        callToAction: {
-          target: '_blank',
-          text: 'Pinterest',
-          href: '#',
-        },
-      },
+      }
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1491349174775-aaafddd81942?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      src: '~/assets/images/intervista.jpg',
       alt: 'Colorful Image',
       loading: 'eager',
     }}
@@ -91,7 +76,7 @@ const metadata = {
         nuove in cui ho fiducia.
       </p>
       <br />
-      <p>Seguimi sui miei social:</p>
+      <p>Seguimi su:</p>
     </Fragment>
 
     <Fragment slot="bg">
@@ -111,7 +96,7 @@ const metadata = {
     },
     { text: 'Consulta curriculum', href: '/curriculum', icon:'tabler:download' },
   ]}
-  image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+  image={{ src: '~/assets/images/pietro-acqua.jpg', alt: 'AstroWind Hero Image' }}
 >
 
   <Fragment slot="subtitle">
@@ -125,61 +110,6 @@ const metadata = {
     >
   </Fragment>
 </Hero>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    id="porfolio"
-    title="Elevating visual narratives"
-    subtitle="Embark on a design journey that surpasses pixels, entering a realm of imagination. Explore my portfolio, where passion and creativity converge to shape enthralling visual narratives."
-    isReversed
-    items={[
-      {
-        title: 'Description:',
-        description:
-          'Developed a comprehensive brand identity for a tech startup, Tech Innovators, specializing in disruptive innovations. The goal was to convey a modern yet approachable image that resonated with both corporate clients and tech enthusiasts.',
-      },
-      {
-        title: 'Role:',
-        description:
-          'Led the entire branding process from concept to execution. Created a dynamic logo that symbolized innovation, selected a vibrant color palette, and I designed corporate stationery, website graphics, and social media assets.',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1658248165252-71e116af1b34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80',
-      alt: 'Tech Design Image',
-    }}
-    callToAction={{
-      target: '_blank',
-      text: 'Go to the project',
-      icon: 'tabler:chevron-right',
-      href: '#',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 1: <br /><span class="text-2xl">Brand identity for tech innovators</span>
-      </h3>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- CallToAction Widget *********** -->
-
-  <CallToAction
-    title="Let's create together"
-    subtitle="Ready to transform your vision into captivating designs?"
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Hire me',
-        href: '/',
-      },
-    ]}
-  />
 
   <!-- BlogLatestPost Widget **************** -->
 
