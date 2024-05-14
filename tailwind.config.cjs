@@ -13,9 +13,9 @@ module.exports = {
         muted: 'var(--aw-color-text-muted)',
       },
       fontFamily: {
-        sans: ['"merriweather"', ...defaultTheme.fontFamily.sans],
-        serif: ['"merriweather"', ...defaultTheme.fontFamily.serif],
-        heading: ['"merriweather"', ...defaultTheme.fontFamily.sans],
+        sans: ['"Inter Variable"', ...defaultTheme.fontFamily.sans],
+        serif: ['"Inter Variable"', ...defaultTheme.fontFamily.serif],
+        heading: ['"Inter Variable"', ...defaultTheme.fontFamily.sans],
       },
     },
   },
