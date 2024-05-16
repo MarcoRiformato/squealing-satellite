@@ -16,7 +16,7 @@ tags:
   - presentefuturo
 
 metadata:
-  canonical: https://astrowind.vercel.app/astrowind-template-in-depth
+  canonical: https://pietrogentili.it/confronti-con-angelo-zini
 ---
 
 La lista Civica Angelo Zini mette al centro proprio il bisogno di tornare a parlare negli spazi pubblici, siano essi fisici o digitali, la politica 2024 targata Angelo Zini, che con la sua lista civica promuove a stretto giro una fitta serie di incontri con residenti nelle frazioni, associazioni di categoria, enti e cooperative.

@@ -16,7 +16,7 @@ tags:
   - presentefuturo
 
 metadata:
-  canonical: https://astrowind.vercel.app/astrowind-template-in-depth
+  canonical: https://pietrogentili.it/la-squadra-zini
 ---
 
 In questa tornata elettorale sarà accompagnato da un gruppo in parte rinnovato

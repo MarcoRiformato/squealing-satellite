@@ -16,7 +16,7 @@ tags:
   - presentefuturo
 
 metadata:
-  canonical: https://astrowind.vercel.app/astrowind-template-in-depth
+  canonical: https://pietrogentili.it/zini-sulla-continuita-territoriale
 ---
 
 Per stare sui tavoli regionali e nazionali aperti negli scorsi mesi (continuità territoriale aerea e marittima) serve un’amministrazione competente, compatta e coesa. Nonostante le molte criticità sul piatto, con l’esperienza maturata in questi 5 anni di governo della città, Angelo Zini, con i suoi collaboratori, si è rivelato un decisore cruciale nel porre richieste, perplessità, verifiche, tenendo sempre a mente il punto cruciale della questione: il benessere e la facilità di spostamento dei cittadini residenti e del territorio elbano.

@@ -16,7 +16,7 @@ tags:
   - presentefuturo
 
 metadata:
-  canonical: https://astrowind.vercel.app/astrowind-template-in-depth
+  canonical: https://pietrogentili.it/zini-sulla-sanita
 ---
 
 Con questo piccolo format, grazie al quale il candidato sindaco Angelo Zini
