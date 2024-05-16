@@ -1,6 +1,6 @@
 ---
 import '~/assets/styles/tailwind.css';
-
+import { Hotjar } from 'astro-hotjar';
 import { I18N } from 'astrowind:config';
 import '@fontsource-variable/inter';
 import CommonMeta from '~/components/common/CommonMeta.astro';
@@ -39,18 +39,7 @@ const { language, textDirection } = I18N;
     <!-- Comment the line below to disable View Transitions -->
     <ViewTransitions fallback="swap" />
 
-    <!-- Hotjar Tracking Code for Pietro Gentili -->
-    <script type="text/partytown">
-      (function(h,o,t,j,a,r){
-          // eslint-disable-next-line prefer-rest-params
-          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-          h._hjSettings={hjid:4985299,hjsv:6};
-          a=o.getElementsByTagName('head')[0];
-          r=o.createElement('script');r.async=1;
-          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-          a.appendChild(r);
-      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
+    <Hotjar id="4985299" version="6" />
 
     <!-- Google tag (gtag.js) -->
     <script
