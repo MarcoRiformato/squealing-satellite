@@ -1,16 +1,19 @@
 ---
-publishDate: 2024-05-13T00:00:00Z
+publishDate: 2024-05-15T00:00:00Z
 title: Con.fronti con Angelo Zini
 excerpt: Incontri pubblici per ascoltare il territorio e le esigenze dei cittadini
 image: "~/assets/images/porto.jpg"
 category: Elezioni 2024
 tags:
-  - zini
-  - elezioni 2024
-  - portoferraio
-  - lista zini elezioni portoferraio
-  - pietro gentili
-  - gentili
+  - confronti 
+  - ascolto
+  - cittadinanza
+  - partecipazione
+  - angelozinisindaco
+  - Portoferraio
+  - Elba
+  - idee
+  - presentefuturo
 
 metadata:
   canonical: https://astrowind.vercel.app/astrowind-template-in-depth

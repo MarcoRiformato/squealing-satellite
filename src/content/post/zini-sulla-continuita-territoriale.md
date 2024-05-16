@@ -5,12 +5,15 @@ excerpt: 𝗖𝗮𝗿𝗼 𝗦𝗶𝗻𝗱𝗮𝗰𝗼, 𝘃𝗶𝗿𝗴𝗼𝗹
 image: "~/assets/images/toremar.jpg"
 category: Elezioni 2024
 tags:
-  - zini
-  - elezioni 2024
-  - portoferraio
-  - lista zini elezioni portoferraio
-  - pietro gentili
-  - gentili
+  - carosindaco
+  - proposte
+  - continuitaterritoriale
+  - dirittostudio
+  - angelozinisindaco
+  - Portoferraio
+  - Elba
+  - idee
+  - presentefuturo
 
 metadata:
   canonical: https://astrowind.vercel.app/astrowind-template-in-depth

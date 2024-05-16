@@ -1,16 +1,19 @@
 ---
-publishDate: 2024-05-13T00:00:00Z
+publishDate: 2024-05-11T00:00:00Z
 title: Zini sulla sanità
 excerpt: 𝗖𝗮𝗿𝗼 𝗦𝗶𝗻𝗱𝗮𝗰𝗼, 𝘃𝗶𝗿𝗴𝗼𝗹𝗮. Oggi parliamo di sanità
 image: "~/assets/images/zini-vicino.jpg"
 category: Elezioni 2024
 tags:
-  - zini
-  - elezioni 2024
-  - portoferraio
-  - lista zini elezioni portoferraio
-  - pietro gentili
-  - gentili
+  - sanità
+  - proposte
+  - ospedale
+  - carosindaco
+  - angelozinisindaco
+  - Portoferraio
+  - Elba
+  - idee
+  - presentefuturo
 
 metadata:
   canonical: https://astrowind.vercel.app/astrowind-template-in-depth

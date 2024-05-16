@@ -1,16 +1,19 @@
 ---
-publishDate: 2024-05-13T00:00:00Z
+publishDate: 2024-05-14T00:00:00Z
 title: La squadra della lista Zini
 excerpt: Con nove donne e sette uomini si presenta la Lista civica 'Angelo Zini sindaco' che vede candidato per il secondo mandato Angelo Zini.
 image: "~/assets/images/squadra-zini.jpg"
 category: Elezioni 2024
 tags:
-  - zini
-  - elezioni 2024
-  - portoferraio
-  - lista zini elezioni portoferraio
-  - pietro gentili
-  - gentili
+  - squadra
+  - rinnovamento
+  - presentazione
+  - esperienza
+  - angelozinisindaco
+  - Portoferraio
+  - Elba
+  - idee
+  - presentefuturo
 
 metadata:
   canonical: https://astrowind.vercel.app/astrowind-template-in-depth
