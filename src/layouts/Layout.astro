@@ -1,6 +1,5 @@
 ---
 import '~/assets/styles/tailwind.css';
-import { Hotjar } from 'astro-hotjar';
 import { I18N } from 'astrowind:config';
 import '@fontsource-variable/inter';
 import CommonMeta from '~/components/common/CommonMeta.astro';
@@ -38,8 +37,6 @@ const { language, textDirection } = I18N;
 
     <!-- Comment the line below to disable View Transitions -->
     <ViewTransitions fallback="swap" />
-
-    <Hotjar id="4985299" version="6" />
 
     <!-- Google tag (gtag.js) -->
     <script

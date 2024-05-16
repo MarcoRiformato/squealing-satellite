@@ -25,7 +25,6 @@
     "@fontsource/merriweather": "^5.0.13",
     "astro": "^4.7.1",
     "astro-embed": "^0.7.2",
-    "astro-hotjar": "^1.0.1",
     "astro-icon": "^1.1.0",
     "limax": "4.1.0",
     "lodash.merge": "^4.6.2",
