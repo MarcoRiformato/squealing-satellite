@@ -1,7 +1,7 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import Header from '~/components/widgets/Header.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
+import Hero from '~/components/widgets/Hero.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 
 const metadata = {
@@ -23,27 +23,35 @@ const metadata = {
       isSticky
       showToggleTheme
     />
-      </Fragment>
+    </Fragment>
 
-      <CallToAction
-      title="In arrivo"
-      subtitle="Stiamo apportando le ultime modifiche al programma della lista, che verrà rilasciato a breve. Intanto, leggi le mie priorità!"
+    <Hero
       actions={[
-        {
-          variant: 'primary',
-          text: 'Priorità',
-          href: '/priorita',
-          icon: 'tabler:bulb',
+        { 
+          text: 'Scarica programma', 
+          href: '/assets/documents/programma-zini.pdf', 
+          download: 'programma-zini.pdf', 
+          icon: 'tabler:download' 
         },
-      ]}
-    />
+        ]}
+          image={{ src: '~/assets/images/zini.jpg', alt: 'AstroWind Hero Image' }}
+        >
+
+      <Fragment slot="subtitle">
+        <span class="hidden sm:inline">
+          <h1 class="text-3xl mb-8 text-blue-400">Il programma della lista per Angelo Zini sindaco</h1>
+          <p class="mb-8">Questa è la sintesi delle principali azioni di governo che vorremmo per la Città, a cui vanno aggiunti molti altri provvedimenti e sensibilità -altrettanto importanti- che i nostri candidati stanno presentando alla collettività.</p>
+          </span
+        >
+      </Fragment>
+    </Hero>
 
   <!-- BlogLatestPost Widget **************** -->
 
   <BlogLatestPosts
     id="blog"
     title="Le news"
-    information={`Leggi gli ultimi articoli`}
+    information={``}
   >
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
