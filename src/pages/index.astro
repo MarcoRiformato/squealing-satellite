@@ -83,35 +83,59 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <!-- Hero -->
-<Hero
-  actions={[
-    {
-      variant: 'primary',
-      text: 'Leggi le mie priorità',
-      href: '/priorita',
-      icon: 'tabler:bulb',
-    },
-    { 
-      text: 'Consulta curriculum', 
-      href: '/assets/documents/cv.pdf', 
-      download: 'cv.pdf', 
-      icon: 'tabler:download' 
-    },
-    ]}
-      image={{ src: '~/assets/images/zini.jpg', alt: 'AstroWind Hero Image' }}
-    >
+<!-- Carosello -->
+<div id="carousel" class="carousel carousel-end rounded-box overflow-x-auto" style="white-space: nowrap;">
+  <div class="carousel-item" style="display: inline-block;">
+    <img src="https://i.imgur.com/jFpioxb.png" alt="Drink" class="w-full h-80 object-contain" />
+  </div>
+  <div class="carousel-item" style="display: inline-block;">
+    <img src="/src/assets/images/edilizia-scolastica.png" alt="Drink" class="w-full h-80 object-contain" />
+  </div>
+  <div class="carousel-item" style="display: inline-block;">
+    <img src="/src/assets/images/eventi.png" class="w-full h-80 object-contain" />
+  </div>
+  <div class="carousel-item" style="display: inline-block;">
+    <img src="/src/assets/images/formazione.png" class="w-full h-80 object-contain" />
+  </div>
+  <div class="carousel-item" style="display: inline-block;">
+    <img src="/src/assets/images/trasporti-pubblici.png" class="w-full h-80 object-contain" />
+  </div>
+  <div class="carousel-item" style="display: inline-block;">
+    <img src="/src/assets/images/diritto-studio.png" class="w-full h-80 object-contain" />
+  </div>
+</div>
 
-  <Fragment slot="subtitle">
-    <span class="hidden sm:inline">
-      Se ne avrò la possibilità mi impegnerò al massimo per ascoltare e coinvolgere tutti,
-      cercando <b>soluzioni nuove</b> a problemi vecchi di Portoferraio e dell’Elba.
-      Sogno l’Elba come un <b>“posto per giovani”</b>, senza però lasciare indietro nessuno. Per scegliere le mie <b>priorità</b> mi sono quindi chiesto: cosa rende
-      una città un “posto per giovani”?<br/><br/> Scopri di più sulle mie priorità oppure consulta le mie competenze nel curriculum.
-      </span
-    >
-  </Fragment>
-</Hero>
+  
+  
+  
+
+  <!-- Hero -->
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Leggi le mie priorità',
+        href: '/priorita',
+        icon: 'tabler:bulb',
+      },
+      { 
+        text: 'Consulta curriculum', 
+        href: '/assets/documents/cv.pdf', 
+        download: 'cv.pdf', 
+        icon: 'tabler:download' 
+      },
+    ]}
+    image={{ src: '~/assets/images/zini.jpg', alt: 'AstroWind Hero Image' }}
+  >
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        Se ne avrò la possibilità mi impegnerò al massimo per ascoltare e coinvolgere tutti,
+        cercando <b>soluzioni nuove</b> a problemi vecchi di Portoferraio e dell’Elba.
+        Sogno l’Elba come un <b>“posto per giovani”</b>, senza però lasciare indietro nessuno. Per scegliere le mie <b>priorità</b> mi sono quindi chiesto: cosa rende
+        una città un “posto per giovani”?<br/><br/> Scopri di più sulle mie priorità oppure consulta le mie competenze nel curriculum.
+      </span>
+    </Fragment>
+  </Hero>
 
   <!-- BlogLatestPost Widget **************** -->
 
@@ -124,3 +148,35 @@ const metadata = {
     </Fragment>
   </BlogLatestPosts>
 </Layout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const carousel = document.getElementById('carousel');
+    if (carousel) {
+      const items = carousel.getElementsByClassName('carousel-item');
+      let currentIndex = 0;
+
+      const showNextItem = () => {
+        const itemWidth = items[0].offsetWidth;
+        currentIndex = (currentIndex + 1) % items.length;
+        const newScrollPosition = currentIndex * itemWidth;
+        carousel.scrollTo({
+          left: newScrollPosition,
+          behavior: 'smooth'
+        });
+      };
+
+      setInterval(showNextItem, 10000);
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
